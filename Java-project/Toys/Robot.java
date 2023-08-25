@@ -5,7 +5,7 @@ public class Robot extends Toy {
     private static double dropProcent;
 
     public Robot() {
-        super(1, TypeOfToy.Robot);
+        super(TypeOfToy.Robot);
         count++;
     }
 
@@ -24,10 +24,5 @@ public class Robot extends Toy {
     @Override
     public void dellCount() {
         count--;
-    }
-
-    @Override
-    public void printInfo() {
-        System.out.printf("\nНазвание : %s, Количество : %d, Процент выпадeния : %d", TypeOfToy.Robot, count, dropProcent);
     }
 }

@@ -5,7 +5,7 @@ public class Doll extends Toy {
     private static double dropProcent;
 
     public Doll() {
-        super(3, TypeOfToy.Doll);
+        super(TypeOfToy.Doll);
         count++;
     }
 
@@ -19,11 +19,6 @@ public class Doll extends Toy {
 
     public static void setDporPercentage(double percent){
         dropProcent = Math.floor(percent);
-    }
-
-    @Override
-    public void printInfo() {
-        System.out.printf("\nНазвание : %s, Количество : %d, Процент выпадения : %d", TypeOfToy.Doll, count, dropProcent);
     }
 
     @Override

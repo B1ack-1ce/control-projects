@@ -5,7 +5,7 @@ public class Lego extends Toy {
     private static double dropProcent;
 
     public Lego() {
-        super(2, TypeOfToy.Lego);
+        super(TypeOfToy.Lego);
         count++;
     }
 
@@ -24,11 +24,5 @@ public class Lego extends Toy {
     @Override
     public void dellCount() {
         count--;
-    }
-
-
-    @Override
-    public void printInfo() {
-        System.out.printf("\nНазвание : %s, Количество : %d, Процент выпадeния : %d", TypeOfToy.Lego, count, dropProcent);
     }
 }
